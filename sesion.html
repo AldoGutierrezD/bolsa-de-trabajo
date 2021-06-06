@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png" sizes="50*50">
+    <link rel="stylesheet" href="css/sesionStyles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <title>Sesión</title>
+</head>
+<body>
+    <section class="container">
+        <section class="inicio">
+            <form action="">
+                <fieldset class="fsInicio">
+                    <legend>Iniciar sesión</legend>
+                    <input class="input" type="email" placeholder="Correo electrónico" required>
+                    <input class="input" type="password" placeholder="Contraseña" minlength="4" required>
+                    <select class="input" name="cars" id="cars" required>
+                        <option value="user">Usuario</option>
+                        <option value="admin">Administrador</option>
+                    </select>
+                    <a href="adminInicio.html"><input class="btn" type="button" value="Entrar (Entra a sesión de Admin)"></a>
+                </fieldset>
+            </form>
+        </section>
+        <section class="registro">
+            <form action="">
+                <fieldset class="fsRegistro">
+                    <legend>Crear cuenta</legend>
+                    <input class="input" type="text" placeholder="Usuario" required>
+                    <input class="input" type="email" placeholder="Correo electrónico" required>
+                    <input class="input" type="password" placeholder="Contraseña" minlength="4" required>
+                    <select class="input" name="cars" id="cars" required>
+                        <option value="user">Usuario</option>
+                        <option value="admin">Administrador</option>
+                    </select>
+                    <section class="terminos">
+                        <input class="checkbox" type="checkbox" id="check" required>
+                        <label for="check">Acepto términos y condiciones</label>
+                    </section>
+                    <a href="index.html"><input class="btn" type="button" value="Registrarse (Entra a sesión de User)"></a>
+                </fieldset>
+            </form>
+        </section>
+    </section>
+</body>
+</html>

@@ -1,0 +1,62 @@
+:root{
+    --color-primary: #EDB74C;
+    --color-light: #F1CD83; 
+    --color-dark: #A17723;
+    --color-cream: #f3e1be;
+    --color-secondary: #5393F5;
+    --color-secondary-dark: #1851A8;
+    --font-primary: 'Big Shoulders Text', cursive;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*******************CHAT******************/
+.chatContainer{
+    position: fixed;
+    bottom: 0;
+    left: 70%;
+    width: 20%;
+    height: 300px;
+    z-index: 5000;
+}
+
+.btn{
+    width: 100%;
+    height: 10%;
+    border-radius: 15px 15px 0 0;
+    background-color: var(--color-secondary-dark);
+    color: #fff;
+    border: none;
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: var(--color-secondary);
+}
+
+.conversacion{
+    width: 100%;
+    height: 80%;
+    background-color: var(--color-cream);
+    font-family: var(--font-primary);
+}
+
+.conversacion>h3{
+    position: absolute;
+    font-family: var(--font-primary);
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.escribir{
+    width: 100%;
+    height: 10%;
+}

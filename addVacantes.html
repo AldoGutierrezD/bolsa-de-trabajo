@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png" sizes="50*50">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/vacantesStyles.css">
+    <link rel="stylesheet" href="css/addVacantes.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Añadir vacantes</title>
+</head>
+<body>
+    <nav class="menu">
+        <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+        <div class="secciones">
+            <ul class="seccionesUl">
+                <a href="foro.html"><li>Foro</li></a>
+                <a href="vacantes.html"><li>Vacantes</li></a>
+                <a href="cv.html"><li>Currículum</li></a>
+                <a href="sesion.html"><li>Sesión</li></a>
+            </ul>
+        </div>
+    </nav>
+    <h1 class="titleMain">Agrega una vacante nueva</h1>
+    <section class="vacantes">
+		<section class="wrap">
+			<ul class="lista" id="lista">
+				<li><a href="#">
+                    <img class="listaImg" src="img/user.png" alt="">
+                    <h2 class="listaTitulo" id="titulo1">Puesto</h2>
+                    <h3 class="listaXP" id="xp1">Experiencia: Nivel</h3>
+                    <p class="listaDescripcion" id="desc1">Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Iure explicabo dolore omnis assumenda.
+                    </p>
+                </a></li>
+				<li><a href="#">
+                    <img class="listaImg" src="img/user.png" alt="">
+                    <h2 class="listaTitulo" id="titulo2">Puesto</h2>
+                    <h3 class="listaXP" id="xp2">Experiencia: Nivel</h3>
+                    <p class="listaDescripcion" id="desc2">Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Iure explicabo dolore omnis assumenda.
+                    </p>
+                </a></li>
+				<li><a href="#">
+                    <img class="listaImg" src="img/user.png" alt="">
+                    <h2 class="listaTitulo" id="titulo3">Puesto</h2>
+                    <h3 class="listaXP" id="xp3">Experiencia: Nivel</h3>
+                    <p class="listaDescripcion" id="desc3">Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Iure explicabo dolore omnis assumenda.
+                    </p>
+                </a></li>
+			</ul>
+		</section>
+        <section class="agregar">
+            <form action="">
+                <fieldset class="fsAgregar">
+                    <h3>Agregar vacante</h3>
+                    <input class="input" type="text" id="puestoNom" placeholder="Puesto">
+                    <input class="input" type="text" id="vacanteNom" placeholder="Nivel">
+                    <textarea class="textArea" name="" id="descripcionNom" cols="30" rows="5" placeholder="Descripción"></textarea>
+                    <input class="btn" type="button" value="Agregar" onclick="agregar()">
+                </fieldset>
+            </form>
+        </section>
+	</section>
+    <footer class="footer">
+        <section class="footerSecciones">
+            <a href="foro.html">Foro</a>
+            <a href="vacantes.html">Vacantes</a>
+            <a href="cv.html">Currículum</a>
+            <a href="sesion.html">Sesión</a>
+        </section>
+        <section class="socialMedia">
+            <h1>Siguenos en: </h1>
+            <a href="https://www.facebook.com/" class="fab fa-facebook-square"></a>
+            <a href="https://twitter.com/" class="fab fa-twitter-square"></a>
+            <a href="https://www.instagram.com/" class="fab fa-instagram-square"></a>
+            <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
+        </section>
+    </footer>
+    <script src="js/vacanteApp.js"></script>
+</body>
+</html>

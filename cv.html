@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png" sizes="50*50">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cvStyles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Currículum Vitae</title>
+</head>
+<body>
+    <nav class="menu">
+        <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+        <div class="secciones">
+            <ul class="seccionesUl">
+                <a href="foro.html"><li>Foro</li></a>
+                <a href="vacantes.html"><li>Vacantes</li></a>
+                <a href="cv.html"><li>Currículum</li></a>
+                <a href="sesion.html"><li>Sesión</li></a>
+            </ul>
+        </div>
+    </nav>
+    <section class="container">
+        <section class="datosPersonales">
+                <form class="cvImgForm" action="">
+                    <fieldset class="fsImg">
+                        <img class="fileImg" src="img/user.png" alt="">
+                        <input class="inputGral archivo" type="file" required>
+                    </fieldset>
+                </form>
+                <form class="cvNombreForm" action="">
+                    <fieldset class="fsNombres">
+                        <input class="inputGral" id="nom" type="text" placeholder="Nombre" required> 
+                        <input class="inputGral" id="apellido" type="text" placeholder="Apellidos" required> 
+                        <input class="inputGral" id="vacante" type="text" placeholder="Puesto solicitado" required> 
+                    </fieldset>
+                </form>
+        </section>
+        <section class="xpContainer">
+            <section class="firstIzq">
+                <form action="">
+                    <fieldset class="informacion">
+                        <legend>INFORMACION</legend>
+                        <input type="email" name="" class="inputGral" id="correo" placeholder="Correo" required>
+                        <input type="number" name="" class="inputGral" id="edad" placeholder="Edad" minlength="0" maxlength="110" required>
+                        <input type="tel" name="" class="inputGral" id="tel" placeholder="Teléfono" required>
+                        <input type="text" name="" class="inputGral" id="ciudad" placeholder="Ciudad" required>
+                        <input type="text" name="" class="inputGral" id="lk" placeholder="Linkedin" required>
+                    </fieldset>
+                </form>
+                    <form action="">
+                        <fieldset>
+                            <legend>QUIEN SOY</legend>
+                            <textarea name="" class="textArea" id="soy" cols="30" rows="7"></textarea>
+                        </fieldset> 
+                    </form>
+                    <form action="">
+                        <fieldset class="programas">
+                            <legend>PROGRAMAS</legend>
+                            <form action="">
+                                <section class="software">
+                                    <label for="excel">Excel: </label>
+                                    <input type="checkbox" name="" class="checkbox" id="excel">
+                                </section>
+                                <section class="software">
+                                    <label for="word">Word: </label>
+                                    <input type="checkbox" name="" class="checkbox" id="word">
+                                </section>
+                                <section class="software">
+                                    <label for="ppt">PowerPoint: </label>
+                                    <input type="checkbox" name="" class="checkbox" id="ppt">
+                                </section>
+                                <section class="software">
+                                    <label for="ps">Photoshop: </label>
+                                    <input type="checkbox" name="" class="checkbox" id="ps">
+                                </section>
+                            </form>
+                        </fieldset>
+                    </form>
+            </section>
+            <section class="firstDer">
+                    <form action="">
+                        <fieldset>
+                            <legend>EXPERIENCIA LABORAL</legend>
+                            <input type="text" class="inputGral" id="empresaNom" placeholder="Nombre de la empresa" required>
+                            <input type="text" class="inputGral" id="cargoOcupado" placeholder="Cargo ocupado" required>
+                            <h5>Tareas realizadas</h5>
+                            <textarea name="tareas" class="textArea" id="" cols="30" rows="3"></textarea>
+                        </fieldset>
+                        <fieldset>
+                            <legend>EXPERIENCIA LABORAL</legend>
+                            <input type="text" class="inputGral" id="empresaNom" placeholder="Nombre de la empresa" required>
+                            <input type="text" class="inputGral" id="cargoOcupado" placeholder="Cargo ocupado" required>
+                            <h5>Tareas realizadas</h5>
+                            <textarea name="tareas" class="textArea" id="" cols="30" rows="3"></textarea>
+                        </fieldset>
+                        <fieldset>
+                            <legend>EXPERIENCIA LABORAL</legend>
+                            <input type="text" class="inputGral" id="empresaNom" placeholder="Nombre de la empresa" required>
+                            <input type="text" class="inputGral" id="cargoOcupado" placeholder="Cargo ocupado" required>
+                            <h5>Tareas realizadas</h5>
+                            <textarea name="tareas" class="textArea" id="" cols="30" rows="3"></textarea>
+                        </fieldset>
+                    </form>
+            </section>
+        </section>
+        <section class="enviar">
+            <form action="">
+                <input class="btn_enviar" type="submit" value="Enviar" onclick="enviado()">
+                <h5>*Toma una captura de pantalla antes de enviar (Simbólico)</h5>
+            </form>
+        </section>
+    </section>
+    <footer class="footer">
+        <section class="footerSecciones">
+            <a href="foro.html">Foro</a>
+            <a href="vacantes.html">Vacantes</a>
+            <a href="cv.html">Currículum</a>
+            <a href="sesion.html">Sesión</a>
+        </section>
+        <section class="socialMedia">
+            <h1>Siguenos en: </h1>
+            <a href="https://www.facebook.com/" class="fab fa-facebook-square"></a>
+            <a href="https://twitter.com/" class="fab fa-twitter-square"></a>
+            <a href="https://www.instagram.com/" class="fab fa-instagram-square"></a>
+            <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
+        </section>
+    </footer>
+    <script>
+        function enviado(){
+            alert("Currículum llenado correctamente, le enviaremos su respuesta al correo proporcionado. Gracias.");
+        }
+    </script>
+</body>
+</html>

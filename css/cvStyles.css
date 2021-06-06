@@ -1,0 +1,373 @@
+:root{
+    --color-primary: #EDB74C;
+    --color-light: #F1CD83; 
+    --color-dark: #A17723;
+    --color-cream: #f3e1be;
+    --color-secondary: #5393F5;
+    --color-secondary-dark: #1851A8;
+    --font-primary: 'Big Shoulders Text', cursive;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-primary);
+}
+
+/*******************CONTAINER********************/
+.container{
+    width: 80%;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding-bottom: 15px;
+    background-color: var(--color-cream);
+}
+
+legend{
+    font-weight: 800;
+}
+/*******************INPUT********************/
+.inputGral, .textArea{
+    border: none;
+    border-bottom: 2px solid var(--color-primary);
+    padding: 5px;
+    width: 90%;
+    display: flexbox;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 20px;
+    background-color: var(--color-light);
+}
+
+.textArea{
+    resize: none;
+}
+
+fieldset{
+    border: 3px solid var(--color-light)
+}
+/*******************DATOS PERSONALES********************/
+.datosPersonales{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    margin: 20px;
+}
+
+.fsImg{
+    width: 140px;
+    height: 140px;
+    margin: 10px;
+}
+
+.fsImg>.archivo{
+    position: relative;
+    top: -50px;
+    margin-left: 14px;
+    width: 80%;
+    z-index: 20;
+    font-size: 10px;
+}
+
+.fileImg{
+    width: 120px;
+    height: auto;
+    margin: auto;
+}
+
+.fsNombres{
+    width: 118.5%;
+    height: 140px;
+    margin: 10px;
+}
+
+.fsNombres>input{
+    width: 95%;
+}
+
+.fsNombres>input:nth-child(1){
+    margin-top: 15px;
+}
+
+/*******************LATERAL IZQUIERDA********************/
+.xpContainer{
+    width: 100%;
+    display: flex;
+}
+
+.firstIzq{
+    width: 45%;
+    margin: 0 2.5%;
+}
+
+.informacion{
+    height: 220px;
+}
+
+.programas{
+    height: 176px;
+}
+
+.software{
+    display: block;
+    margin: 14px 120px;
+}
+
+.software input{
+    display: inline;
+    float: right;
+}
+/*******************LATERAL DERECHA********************/
+.firstDer{
+    width: 45%;
+    margin: 0 2.5%;
+}
+
+.firstDer h5{
+    margin-left: 17px;
+}
+
+/**************************ENVIAR****************************/
+.enviar{
+    width: 100%;
+}
+
+.enviar h5{
+    text-align: center;
+}
+
+.btn_enviar{
+    padding: 15px 25px;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    border: none;
+    color: #000;
+    margin-top: 40px;
+    margin-left: 46%;
+    cursor: pointer;
+}
+
+/*********************RESPONSIVE*************************/
+@media only screen and (min-width: 320px) and (max-width: 767px)  {
+    .inputGral, .textArea{
+        padding: 3px;
+        width: 90%;
+        margin: 3px 10px;
+    }
+    /*Datos personales*/
+    .datosPersonales{
+        height: 100px;
+        margin: 10px;
+    }
+    .fsImg{
+        width: 80px;
+        height: 100px;
+        margin: 10px 0;
+    }
+    .fsNombres{
+        width: 90%;
+        height: 100px;
+        margin: 10px 0 10px 5px;
+    }
+    .fsNombres>input:nth-child(1){
+        margin-top: 5px;
+    }
+    .fileImg{
+        width: 70px;
+        height: auto;
+        margin: 10px auto;
+    }
+    .fsImg>.archivo{
+        margin-left: 0;
+        width: 100%;
+        font-size: 6px;
+    }
+    /*Información*/
+    .informacion{
+        height: 180px;
+    }
+    /*Programas*/
+    .programas{
+        height: 155px;
+    }
+    .software{
+        margin: 10px 30px;
+    }
+    /*Btn enviar*/
+    .btn_enviar{
+        margin-top: 30px;
+        margin-left: 40%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 831px)  {
+    .inputGral, .textArea{
+        padding: 3px;
+        width: 90%;
+        margin: 3px 10px;
+    }
+    /*Datos personales*/
+    .datosPersonales{
+        height: 100px;
+        margin: 10px;
+    }
+    .fsImg{
+        width: 80px;
+        height: 100px;
+        margin: 10px 5px;
+    }
+    .fsNombres{
+        width: 94%;
+        height: 100px;
+        margin: 10px 0 10px 5px;
+    }
+    .fsNombres>input:nth-child(1){
+        margin-top: 5px;
+    }
+    .fileImg{
+        width: 70px;
+        height: auto;
+        margin: 10px auto;
+    }
+    .fsImg>.archivo{
+        margin-left: 0;
+        width: 100%;
+        font-size: 6px;
+    }
+    /*Información*/
+    .informacion{
+        height: 180px;
+    }
+    /*Programas*/
+    .programas{
+        height: 155px;
+    }
+    .software{
+        margin: 10px 30px;
+    }
+    /*Btn enviar*/
+    .btn_enviar{
+        margin-top: 30px;
+        margin-left: 40%;
+    }
+}
+
+@media only screen and (min-width: 832px) and (max-width: 950px)  {
+    .inputGral, .textArea{
+        padding: 3px;
+        width: 90%;
+        margin: 3px 10px;
+    }
+    /*Datos personales*/
+    .datosPersonales{
+        height: 100px;
+        margin: 10px;
+    }
+    .fsImg{
+        width: 80px;
+        height: 100px;
+        margin: 10px 5px;
+    }
+    .cvNombreForm{
+        max-width: 1000px;
+        width: 100%;
+    }
+    .fsNombres{
+        max-width: 800px;
+        width: 95%;
+        height: 100px;
+        margin: 10px 0 10px 5px;
+    }
+    .fsNombres>input:nth-child(1){
+        margin-top: 5px;
+    }
+    .fileImg{
+        width: 70px;
+        height: auto;
+        margin: 10px auto;
+    }
+    .fsImg>.archivo{
+        margin-left: 0;
+        width: 100%;
+        font-size: 6px;
+    }
+    /*Información*/
+    .informacion{
+        height: 180px;
+    }
+    /*Programas*/
+    .programas{
+        height: 155px;
+    }
+    .software{
+        margin: 10px 30px;
+    }
+    /*Btn enviar*/
+    .btn_enviar{
+        margin-top: 30px;
+        margin-left: 45%;
+    }
+}
+
+@media only screen and (min-width: 951px) and (max-width: 1250px)  {
+    .inputGral, .textArea{
+        padding: 3px;
+        width: 90%;
+        margin: 3px 10px;
+    }
+    /*Datos personales*/
+    .datosPersonales{
+        height: 100px;
+        margin: 10px;
+    }
+    .fsImg{
+        width: 80px;
+        height: 100px;
+        margin: 10px 5px;
+    }
+    .cvNombreForm{
+        max-width: 1000px;
+        width: 100%;
+    }
+    .fsNombres{
+        max-width: 800px;
+        width: 95%;
+        height: 100px;
+        margin: 10px 0 10px 5px;
+    }
+    .fsNombres>input:nth-child(1){
+        margin-top: 5px;
+    }
+    .fileImg{
+        width: 70px;
+        height: auto;
+        margin: 10px auto;
+    }
+    .fsImg>.archivo{
+        margin-left: 0;
+        width: 100%;
+        font-size: 6px;
+    }
+    /*Información*/
+    .informacion{
+        height: 180px;
+    }
+    /*Programas*/
+    .programas{
+        height: 155px;
+    }
+    .software{
+        margin: 10px 30px;
+    }
+    /*Btn enviar*/
+    .btn_enviar{
+        margin-top: 30px;
+        margin-left: 45%;
+    }
+}
+

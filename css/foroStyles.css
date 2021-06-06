@@ -1,0 +1,230 @@
+:root{
+    --color-primary: #EDB74C;
+    --color-light: #F1CD83; 
+    --color-dark: #A17723;
+    --color-cream: #f3e1be;
+    --color-secondary: #5393F5;
+    --color-secondary-dark: #1851A8;
+    --font-primary: 'Big Shoulders Text', cursive;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #FAFAFA;
+	font-family: var(--font-primary);
+	font-size: 16px;
+    font-weight: 700;
+}
+
+.wrap {
+	margin: auto;
+	max-width: 800px;
+	width: 90%;
+    background-color: var(--color-cream);
+}
+
+/*************************Información del foro*************************/
+.comentarios h1{
+    font-family: var(--font-primary);
+    font-weight: 800;
+    margin-left: 15%;
+}
+
+.date{
+    max-width: 800px;
+    width: 90%;
+    display: flex;
+    margin-left: 15%;
+    margin-bottom: 20px;
+}
+
+.date h3{
+    padding: 0 40px;
+    font-size: 16px;
+}
+
+/************************Lista de comentarios***************************/
+.principal {
+	background: var(--color-primary);
+	color: #fff;
+	padding: 50px 0;
+	width: 63.4%;
+    margin-left: 18.3%;
+    margin-bottom: 5%;
+}
+
+.principal .formulario {
+	color: #212121;
+	text-align: center;
+}
+
+.principal .formulario input[type=text] {
+	margin-bottom: 20px;
+	padding: 10px;
+	width: 100%;
+}
+
+.principal .formulario input[type=text].error {
+	border: 5px solid #D32F2F;
+	color: red;
+}
+
+.principal .formulario .boton {
+	background-color: var(--color-light);
+    border: none;
+	color: #000;
+	display: inline-block;
+	font-size: 16px;
+	padding: 15px;
+}
+
+.principal .formulario .boton:hover {
+	border: 1px solid #fff;
+}
+
+.container{
+    margin: auto;
+	max-width: 800px;
+	width: 90%;
+}
+/********************Agregar comentarios********************/
+.comentarios .lista {
+	list-style: none;
+    padding: 5px 15px;
+}
+
+.comentarios .lista li {
+	border-bottom: 1px solid #B6B6B6;
+}
+
+.comentarios .lista li a {
+	color: #212121;
+	display: block;
+	padding: 20px 0;
+	text-decoration: none;
+}
+
+.comentarios .lista li a:hover {
+	text-decoration: line-through;
+}
+
+/*********************RESPONSIVE*************************/
+@media only screen and (min-width: 320px) and (max-width: 767px)  {
+	.menu{
+		display: none;
+	}
+	/*Título del foro*/
+	.comentarios h1{
+		font-size: 25px;
+		margin-left: 5%;
+	}
+	/*Agregar comentario*/
+	.principal{
+		width: 90%;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+	/*Datos del foro*/
+	.date{
+		margin-left: 5%;
+	}
+	.date h3{
+		padding-left: 2px;
+		font-size: 15px;
+	}
+    /*Footer*/
+    .footerSecciones a{
+        font-weight: 800;
+        padding: 0;
+        margin: 0;
+        font-size: 12px;
+        margin-left: 6px;
+    }
+    .socialMedia h1{
+        margin-top: 12px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 888px)  {
+	/*Menú*/
+	.menu{
+		display: flex;
+	}
+	.menu>a>img{
+		margin-left: 12%;
+	}
+	.seccionesUl{
+		margin: 0;
+		margin-left: 250px;
+	}
+	.seccionesUl>a{
+		font-size: 15px;
+		margin: 20px 15px;
+	}
+	/*Agregar comentario*/
+	.principal{
+		width: 90%;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (min-width: 889px) and (max-width: 1023px)  {
+	/*Menú*/
+	.menu{
+		display: flex;
+	}
+	.menu>a>img{
+		margin-left: 12%;
+	}
+	.seccionesUl{
+		margin: 0;
+		margin-left: 380px;
+	}
+	.seccionesUl>a{
+		font-size: 18px;
+		margin: 20px 15px;
+	}
+	/*Agregar comentario*/
+	.principal{
+		max-width: 800px;
+		width: 90%; 
+		margin: auto;
+	}
+	.container{
+		width: 80%;
+	}
+}
+
+@media only screen and (min-width: 1023px){
+	/*Menú*/
+	.menu{
+		display: flex;
+	}
+	.menu>a>img{
+		margin-left: 12%;
+	}
+	.seccionesUl{
+		margin: 0;
+		margin-left: 690px;
+	}
+	.seccionesUl>a{
+		font-size: 18px;
+		margin: 20px 15px;
+	}
+	/*Agregar comentario*/
+	.principal{
+		max-width: 800px;
+		width: 90%; 
+		margin: auto;
+	}
+	.container{
+		width: 80%;
+	}
+}

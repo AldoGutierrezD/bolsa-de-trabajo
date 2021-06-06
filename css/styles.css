@@ -1,0 +1,487 @@
+:root{
+    --color-primary: #EDB74C;
+    --color-light: #f1cd83; 
+    --color-dark: #A17723;
+    --color-cream: #f3e1be;
+    --color-secondary: #5393F5;
+    --color-secondary-dark: #1851A8;
+    --font-primary: 'Big Shoulders Text', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*****************************MENÚ****************************/
+.menu{
+    width: 100vw;
+    height: 60px;
+    background-color: var(--color-secondary-dark);
+}
+
+.menu>a>img{
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 5px 150px;
+}
+
+.seccionesUl{
+    float: right;
+    margin-right: 150px;
+}
+
+.seccionesUl>a{
+    color: white;
+    float: left;
+    text-decoration: none;
+    list-style: none;
+    margin: 15px 30px;
+    font-size: 18px;
+    font-family: var(--font-primary);
+    font-weight: 700;
+}
+
+.seccionesUl a:hover{
+    color: var(--color-secondary);
+}
+
+/*****************************SLIDER****************************/
+.header{
+    width: 100vw;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.header ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slider 20s infinite alternate;
+}
+
+.header li{
+    width: 100%;
+    list-style: none;
+}
+
+.header img{
+    width: 100%;
+    opacity: 0.6;
+}
+
+@keyframes slider {
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+.header h1{
+    position: absolute;
+    z-index: 20;
+    font-family: var(--font-primary);
+    font-weight: 800;
+    font-size: 70px;
+    top: 35%;
+    left: 32%;
+    text-shadow: 5px 8px rgba(0, 0, 0, 0.2);
+    color: var(--color-primary);
+}
+
+/*****************************SERVICIOS****************************/
+.services{
+    background-color: var(--color-light);
+    width: 100vw;
+    height: 350px;
+}
+
+.servicesContainer{
+    width: 80%;
+    height: 150px;
+    margin-top: 5%;
+    margin-left: 12%;
+    display: flex;
+}
+
+.servicesContent{
+    width: 20%;
+    height: auto;
+    margin: 0 20px;
+}
+
+.servicesImg{
+    width: 90px;
+    height: 90px;
+    margin: 0 33%;
+}
+
+.servicesTitleMain{
+    position: relative;
+    text-align: center;
+    top: 20px;
+    font-size: 40px;
+    font-family: var(--font-primary);
+    font-weight: 800;
+}
+
+.servicesTitle,.servicesText{
+    text-align: center;
+    font-family: var(--font-primary);
+    font-weight: 500;
+}
+
+.servicesTitle{
+    font-size: 25px;
+}
+
+/***********************WORKERS***********************/
+.workers{
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    background-color: #000;
+}
+
+.workersMain{
+    width: 50%;
+    height: 400px;
+}
+
+.workersMain img{
+    width: 100%;
+    height: 400px;
+    opacity: 0.6;
+}
+
+.workersMain h1{
+    position: absolute;
+    z-index: 20;
+    font-family: var(--font-primary);
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--color-primary);
+    text-shadow: 5px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 13%;
+    margin-left: 4%;
+}
+
+.workersSecond{
+    width: 50%;
+    height: 400px;
+    display: table;
+}
+
+.workersImg{
+    width: 50%;
+    height: 197px;
+    opacity: 0.6;
+}
+
+.workersImg:hover{
+    opacity: 1;
+}
+
+/***********************PROCESO***********************/
+.process{
+    background-color: var(--color-light);
+    width: 100vw;
+    height: 320px;
+}
+
+.processContainer{
+    width: 80%;
+    height: 150px;
+    margin-left: 12%;
+    margin-top: 5%;
+    display: flex;
+}
+
+.processPoint{
+    width: 20%;
+    height: auto;
+    margin: 0 20px;
+}
+
+.processStep{
+    width: 90px;
+    height: 90px;
+    margin: 0px 33%;
+    border: 8px solid var(--color-secondary);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 50px;
+    font-family: var(--font-primary);
+    font-weight: 800;
+    color: var(--color-secondary);
+}
+
+.processTitleMain{
+    position: relative;
+    text-align: center;
+    top: 20px;
+    font-size: 40px;
+    font-family: var(--font-primary);
+    font-weight: 800;
+}
+
+.processTitle{
+    text-align: center;
+    font-size: 25px;
+    font-family: var(--font-primary);
+    font-weight: 500;
+}
+
+/**************************FOOTER************************/
+.footer{
+    width: 100vw;
+    height: 200px;
+    background-color: var(--color-secondary);
+}
+
+.footerSecciones{
+    float: left;
+    margin-top: 150px;
+    margin-left: 100px;
+}
+
+.footerSecciones a{
+    font-family: var(--font-primary);
+    font-weight: 800;
+    text-decoration: none;
+    color: #000;
+    padding: 0 10px;
+    font-size: 18px;
+}
+
+.footerSecciones a:hover{
+    color: var(--color-secondary-dark);
+}
+
+.socialMedia{
+    float: right;
+    margin-right: 100px;
+    margin-top: 140px;
+    display: flex;
+}
+
+.socialMedia h1{
+    font-size: 18px;
+    font-family: var(--font-primary);
+    font-weight: 800;
+    margin-top: 8px;
+}
+
+.socialMedia a{
+    text-decoration: none;
+}
+
+[class*="fa-"]{
+    color: var(--color-light);
+    font-size: 30px;
+    margin: 5px;
+}
+
+[class*="fa-"]:hover{
+    color: var(--color-secondary-dark);
+}
+
+/*LAPTOPS*/
+@media only screen and (max-width: 950px)  {
+    nav,.chatContainer{
+        display: none;
+    }
+    /*Header*/
+    .header{
+        display: none;
+    }
+    /*Servicios*/
+    .services{
+        width: 100%;
+        height: 300px;
+    }
+    .servicesContainer{
+        width: 70%;
+        margin-left: 16%;
+    }
+    .servicesContent{
+        width: 25%;
+    }
+    .servicesImg{
+        width: 70px;
+        height: 70px;
+        margin: 0 8%;
+    }
+    .servicesText{
+        font-size: 15px;
+    }
+    /*Workers*/
+    .workers{
+        width: 100%;
+    }
+    .workersSecond{
+        display: block;
+    }
+    .workersSecond>img:nth-child(2),.workersSecond>img:nth-child(4){
+        display: none;
+    }
+    .workersMain{
+        width: 90%;
+    }
+    .workersSecond>img:nth-child(1),.workersSecond>img:nth-child(3){
+        width: 100%;
+    }
+    .workersMain h1{
+        margin-top: 15%;
+        margin-left: 3%;
+    }
+    /*Process*/
+    .process{
+        width: 100%;
+        height: 250px;
+    }
+    .processContainer{
+        width: 70%;
+        margin-left: 15%;
+    }
+    .processStep{
+        width: 70px;
+        height: 70px;
+        margin: 0px 16%;
+        font-size: 40px;
+    }
+    .processTitle{
+        font-size: 20px;
+    }
+    /*Footer*/
+    .footer{
+        width: 100%;
+        height: 100px;
+    }
+    .footerSecciones{
+        margin-top: 60px;
+        margin-left: 20px;
+    }
+    .socialMedia{
+        margin-right: 20px;
+        margin-top: 50px;
+    }
+}
+
+/*TABLETS*/
+@media only screen and (max-width: 640px)  {
+    .servicesContainer{
+        width: 80%;
+        margin-left: 12%;
+    }
+    .servicesTitleMain{
+        margin-left: 5%;
+        font-size: 35px;
+    }
+    /*Workers*/
+    .workersMain h1{
+        width: 70%;
+        font-size: 40px;
+        margin-top: 20%;
+        margin-left: 4%;
+    }
+    /*Process*/
+    .processContainer{
+        width: 70%;
+        margin-left: 15%;
+    }
+    .processStep{
+        width: 70px;
+        height: 70px;
+        margin: 0px 16%;
+        font-size: 40px;
+    }
+    .processTitle{
+        font-size: 20px;
+    }
+    .processTitleMain{
+        font-size: 35px;
+    }
+    /*Footer*/
+    .footerSecciones a{
+        font-weight: 800;
+        padding: 0 8px;
+        font-size: 16px;
+    }
+    .socialMedia h1{
+        margin-top: 9px;
+        font-size: 16px;
+    }
+}
+
+/*MOVILES*/
+@media only screen and (max-width: 560px)  {
+    .servicesContainer{
+        width: 60%;
+        margin-left: 8%;
+    }
+    .servicesTitleMain{
+        margin-left: 5%;
+        font-size: 30px;
+    }
+    /*Workers*/
+    .workersMain{
+        width: 30000%;
+    }
+    .workersSecond>img:nth-child(1),.workersSecond>img:nth-child(3){
+        display: none;
+    }
+    /*Process*/
+    .processContainer{
+        width: 70%;
+        margin-left: 8%;
+    }
+    .processTitleMain{
+        font-size: 30px;
+    }
+    /*Footer*/
+    .footerSecciones a{
+        font-weight: 800;
+        padding: 0 4px;
+        font-size: 15px;
+    }
+    .socialMedia h1{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 500px)  {
+    .servicesContainer{
+        width: 60%;
+        margin-left: 4%;
+    }
+    /*Process*/
+    .processContainer{
+        width: 70%;
+        margin-left: 4%;
+    }
+    /*Footer*/
+    .footerSecciones a{
+        font-weight: 800;
+        padding: 0;
+        margin: 0;
+        font-size: 12px;
+        margin-left: 6px;
+    }
+    .socialMedia h1{
+        margin-top: 12px;
+        font-size: 12px;
+    }
+}
